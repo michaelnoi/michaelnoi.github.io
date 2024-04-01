@@ -1,34 +1,27 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"bercea":
+  - firstname: ["Cosmin I"]
+    url: https://cosmin-bercea.com/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"schnabel":
+  - firstname: ["Julia A"]
+    url: https://compai-lab.github.io/author/julia-a.-schnabel/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"rueckert":
+  - firstname: ["Daniel"]
+    url: https://aim-lab.io/author/daniel-ruckert/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"leiber":
+  - firstname: ["Collin"]
+    url: https://collinleiber.de/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"baumann":
+  - firstname: ["Stefan A", "Stefan Andreas"]
+    url: https://github.com/stefan-baumann/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"hu":
+  - firstname: ["Vincent Tao"]
+    url: https://taohu.me/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"ommer":
+  - firstname: ["Björn"]
+    url: https://ommer-lab.com/people/ommer/

@@ -15,8 +15,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a second-year Master's student at the Technical University of Munich. I am interested in 3D computer vision, generative models and fruitfully combining the two. Currently, I am working as a research assistant at the [Ommerlab](https://ommer-lab.com/) at the [University of Munich (LMU)](https://www.lmu.de/en/).
+I am a second-year Master's student at the Technical University of Munich. I am interested in 3D computer vision, generative models and fruitfully combining the two. Currently, I am doing a research project supervised by [Chuanxia Zheng](https://chuanxiaz.com/) and [Yan Xia](https://yan-xia.github.io/) ([VGG](https://www.robots.ox.ac.uk/~vgg/) at Oxford). I also work as a research assistant at the [Ommerlab](https://ommer-lab.com/) supervised by [Stephan Baumann](https://stefan-baumann.eu/).
 
-On the side, I am engaged in the educational offerings of [TUM.ai](https://tum-ai.com/) and organize the TUM.ai paper reading circle. If you are in Munich, interested in (3D) computer vision, generative modeling or machine learning in general and want to join or present in a session, feel free to reach out anytime. Also, I love endurance sports.
+For almost two years now, I am engaged in the educational offerings of [TUM.ai](https://tum-ai.com/) and organize the TUM.ai paper reading circle discussing papers on (3D) computer vision, generative modeling and machine learning in general. Feel free to reach out if you want to join a session.
 
 Previously, I obtained my B.Sc. in Computer Science and B.A. in Philosophy from the University of Munich.

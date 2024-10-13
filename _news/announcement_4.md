@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Finished Bachelor of Arts in Philosophy at the [University of Munich (LMU)](https://www.lmu.de/en/).
+I finished my Bachelor of Arts in Philosophy at the [University of Munich (LMU)](https://www.lmu.de/en/).

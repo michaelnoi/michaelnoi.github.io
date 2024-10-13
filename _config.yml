@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Michael
 middle_name:  
 last_name: Neumayr
-email: michael.jun.neumayr@gmail.com
+email:  
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: > # text in the footer
   All rights reserved.
@@ -66,7 +66,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: michaelnoi # your GitHub user name
 gitlab_username: # your GitLab user name
-x_username: # your X handle
+x_username: MichaelNeumayr7 # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: michaelneumayr # your LinkedIn user name
 telegram_username: # your Telegram user name

@@ -1,33 +1,72 @@
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and site.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
-      {% endif %}
-    >
+    {% assign news = site.news | reverse %}
+    {% assign initial_limit = site.announcements.limit | default: 3 %}
+    
+    <div class="table-responsive">
       <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and site.announcements.limit %}
-          {% assign news_limit = site.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-            </td>
-          </tr>
+        <!-- Loop through all news items and decide visibility -->
+        {% for item in news %}
+          {% if forloop.index <= initial_limit %}
+            <!-- Show initial news items -->
+            <tr class="news-item">
+              <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+              <td>
+                {% if item.inline %}
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {% else %}
+                  <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
+              </td>
+            </tr>
+          {% else %}
+            <!-- Hide remaining news items -->
+            <tr class="news-item-hidden" style="display: none;">
+              <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+              <td>
+                {% if item.inline %}
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {% else %}
+                  <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
+              </td>
+            </tr>
+          {% endif %}
         {% endfor %}
       </table>
     </div>
+    
+    <!-- Show more/less button -->
+    {% if news_size > initial_limit %}
+      <div class="text-center mt-3">
+        <button id="toggle-news-btn" class="btn btn-sm btn-outline-primary" onclick="toggleNews()">
+          Show {{ news_size | minus: initial_limit }} more
+        </button>
+      </div>
+    {% endif %}
+    
+    <script>
+      function toggleNews() {
+        const hiddenItems = document.querySelectorAll('.news-item-hidden');
+        const button = document.getElementById('toggle-news-btn');
+        const isHidden = hiddenItems[0].style.display === 'none';
+        
+        hiddenItems.forEach(item => {
+          item.style.display = isHidden ? '' : 'none';
+        });
+        
+        if (isHidden) {
+          button.textContent = 'Show less';
+          button.classList.remove('btn-outline-primary');
+          button.classList.add('btn-outline-secondary');
+        } else {
+          button.textContent = 'Show {{ news_size | minus: initial_limit }} more';
+          button.classList.remove('btn-outline-secondary');
+          button.classList.add('btn-outline-primary');
+        }
+      }
+    </script>
   {% else %}
     <p>No news so far...</p>
   {% endif %}

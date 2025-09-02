@@ -47,6 +47,18 @@ layout: default
         {% include selected_papers.liquid %}
       {% endif %}
 
+             <!-- Teaching -->
+     {% if page.teaching %}
+       <h2 class="mb-3">Teaching Assistant</h2>
+       {% include teaching.liquid %}
+     {% endif %}
+
+    <!-- Projects -->
+    {% if page.projects %}
+      <h2 class="mb-3">Projects</h2>
+      {% include projects_main.liquid %}
+    {% endif %}
+    
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>

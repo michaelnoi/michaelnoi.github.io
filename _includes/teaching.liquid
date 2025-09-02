@@ -1,0 +1,23 @@
+{% assign teaching_positions = site.data.teaching | default: site.teaching %}
+{% if teaching_positions and teaching_positions.size > 0 %}
+  <div class="teaching">
+    {% assign grouped_teaching = teaching_positions | group_by: "institution" %}
+    {% for group in grouped_teaching %}
+      <div class="mb-3">
+        <em>At {{ group.name }}:</em>
+        <ul class="mt-1 mb-0">
+          {% for position in group.items %}
+            <li>
+              {% if position.course_url %}
+                <a href="{{ position.course_url }}" target="_blank">{{ position.course }}</a>
+              {% else %}
+                {{ position.course }}
+              {% endif %}
+              - {{ position.year }}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

@@ -2,8 +2,8 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: University projects in Computer Vision.
-nav: true
+description: University projects in Computer Vision and Generative Modeling.
+nav: false
 nav_order: 3
 display_categories: [university]
 horizontal: false

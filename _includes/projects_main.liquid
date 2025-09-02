@@ -1,0 +1,46 @@
+{% assign sorted_projects = site.projects | sort: "importance" %}
+{% if sorted_projects and sorted_projects.size > 0 %}
+  <div class="projects">
+    <div class="row row-cols-1 row-cols-md-2">
+      {% for project in sorted_projects %}
+        <div class="col mb-4">
+          <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" class="text-decoration-none">
+            <div class="card h-100 hoverable">
+              {% if project.img %}
+                <div class="card-img-top">
+                  {%
+                    include figure.liquid
+                    loading="eager"
+                    path=project.img
+                    sizes = "250px"
+                    alt="project thumbnail"
+                    class="img-fluid"
+                  %}
+                </div>
+              {% endif %}
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text flex-grow-1">{{ project.description }}</p>
+                {% if project.github %}
+                  <div class="mt-auto">
+                    <div class="github-icon">
+                      <div class="icon" data-toggle="tooltip" title="Code Repository">
+                        <i class="fa-brands fa-github gh-icon"></i>
+                        {% if project.github_stars %}
+                          <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+                            <i class="fa-solid fa-star"></i>
+                            <span id="{{ project.github_stars }}-stars"></span>
+                          </span>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

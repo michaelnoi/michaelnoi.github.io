@@ -1,8 +1,8 @@
 ---
 layout: about
-title: About
+title: blank
 permalink: /
-subtitle: <b>M.Sc. Computer Science </b> @ <a href='https://www.tum.de/en/'>TUM</a>
+subtitle: <b>PhD in Computer Science </b> @ <a href='https://www.utoronto.ca/'>UofT</a>
 
 profile:
   align: right
@@ -10,13 +10,13 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: 
 
-news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
+teaching: true # includes a list of teaching assistantships
+projects: true # includes a list of projects
+news: true # includes a list of news items
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a final-year Master's student interested in 3D computer vision and generative models. Currently, I am doing my thesis at [University of Toronto](https://www.utoronto.ca/) under the supervision of [David Lindell](https://davidlindell.com/) and [Sherwin Bahmani](https://sherwinbahmani.github.io/), co-supervised by [Matthias Nießner](https://www.niessnerlab.org/members/matthias_niessner/profile.html) at TUM. 
+I am a PhD student in Computer Science at the [University of Toronto](https://www.utoronto.ca/), working on 3D computer vision and generative models under the supervision of [David Lindell](https://davidlindell.com/). I hold an M.Sc. in Computer Science from [TU Munich](https://www.tum.de/en/) and a B.Sc. in Computer Science and B.A. in Philosophy from the [University of Munich](https://www.lmu.de/en/).
 
-Previously, I worked as research assistant at the [Ommerlab](https://ommer-lab.com/) with [Stephan Baumann](https://stefan-baumann.eu/). During my studies, I worked on several projects, including a [course project on generalizable novel view synthesis](/projects/) supervised by [David Rozenberszki](https://rozdavid.github.io/) and a [research project on diffusion models in medical imaging](https://ci.bercea.net/project/autoddpm/) under [Cosmin Bercea](https://cosmin-bercea.com/) and [Julia Schnabel](https://www.professoren.tum.de/en/schnabel-julia).
-
-I am engaged in the educational offerings of [TUM.ai](https://tum-ai.com/) for over two years and organize the TUM.ai paper reading circle on (3D) computer vision and generative modeling. I obtained my B.Sc. in Computer Science and B.A. in Philosophy from the University of Munich.
+My M.Sc. thesis was at the [University of Toronto](https://www.utoronto.ca/) with [Sherwin Bahmani](https://sherwinbahmani.github.io/) and [David Lindell](https://davidlindell.com/). I worked as a research assistant at the [Ommerlab](https://ommer-lab.com/) with [Stephan Baumann](https://stefan-baumann.eu/). Master's courses included a [project on generalizable novel view synthesis](/projects/) with [David Rozenberszki](https://rozdavid.github.io/) and [research on diffusion models in medical imaging](https://cosmin-bercea.com/icml-23) with [Cosmin Bercea](https://cosmin-bercea.com/) and [Julia Schnabel](https://www.professoren.tum.de/en/schnabel-julia).

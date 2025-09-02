@@ -1,0 +1,16 @@
+- year: "Winter 2025"
+  course: "CSC420: Introduction to Image Understanding"
+  course_url: "https://www.cs.toronto.edu/~lindell/teaching/420/"
+  institution: "University of Toronto"
+
+- year: "Summer 2025"
+  course: "CIT4230003: Advanced Machine Learning: Deep Generative Models"
+  institution: "Technical University of Munich"
+
+- year: "Summer 2024"
+  course: "CIT4230003: Advanced Machine Learning: Deep Generative Models"
+  institution: "Technical University of Munich"
+
+- year: "Summer 2021"
+  course: "Introduction to Computer Science: Systems and Applications"
+  institution: "University of Munich"

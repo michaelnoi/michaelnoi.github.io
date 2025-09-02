@@ -37,33 +37,29 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix" style="margin-top: 2.5rem;">{{ content }}</div>
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-        <h2>
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
-        </h2>
+        <h2>Publications</h2>
         {% include selected_papers.liquid %}
       {% endif %}
 
              <!-- Teaching -->
      {% if page.teaching %}
-       <h2 class="mb-3">Teaching Assistant</h2>
+       <h2 class="mb-4">Teaching Assistant</h2>
        {% include teaching.liquid %}
      {% endif %}
 
     <!-- Projects -->
     {% if page.projects %}
-      <h2 class="mb-3">Projects</h2>
+      <h2 id="projects" class="mb-4">Projects</h2>
       {% include projects_main.liquid %}
     {% endif %}
     
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-      </h2>
+      <h2>News</h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
